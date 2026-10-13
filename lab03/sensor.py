@@ -21,16 +21,12 @@ for _ in range(n):
 
         if maximum is None or value > maximum:
             maximum = value
-if countkor>0:
-    avg=sumkor/countkor
-else:
-    avg=0.0
 
 print(n)
 print(errors)
 print(previsheniya)
-if maximum if not None:
-    print(f"{maximum:.1f}")
+print(f"{maximum:.1f}")
+if countkor>0:
+    print(f"{sumkor/countkor:.1f}")
 else:
-    print("0.0")
-print(f"{avg:.1f}")
+    print(False)
