@@ -25,8 +25,9 @@ for _ in range(n):
 print(n)
 print(errors)
 print(previsheniya)
-print(f"{maximum:.1f}")
 if countkor>0:
     print(f"{sumkor/countkor:.1f}")
+    print(f"{maximum:.1f}")
 else:
     print(False)
+
