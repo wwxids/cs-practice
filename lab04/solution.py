@@ -17,3 +17,8 @@ def ranking(names: list[str], scores: list[float]) -> list[str]:
 def above_average(names: list[str], scores: list[float]) -> list[str]:
     avg = average(scores)
     return [names[i] for i in range(len(scores)) if scores[i] > avg]
+
+if __name__== "__main__":
+    names = ['Виктор','Галина','Борис']
+    scores= [4.5,3.8,5.5]
+    print(ranking(names,scores))
