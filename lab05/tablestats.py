@@ -27,3 +27,16 @@ def count_types(rows):
         kind = row["тип"]
         counts[kind] = counts.get(kind, 0) + 1
     return counts
+
+def total_minutes(rows, kind):
+    total = 0.0
+    for row in rows:
+        if row["тип"] != kind:
+            continue
+        try:
+            minutes = float(row["минуты"].replace(",", "."))
+        except ValueError:
+            continue
+        total += minutes
+    return round(total, 1)
+
