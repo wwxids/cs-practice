@@ -31,3 +31,12 @@ def column_range(matrix,column):
         arr = arr.reshape(1, -1)
     col = arr[:, column]
     return round(float(col.max() - col.min()), 6)
+
+if __main__="__main__":
+print(reshape_rows([12,14.5,11,13,15.5,10.5],3))
+
+print(block([[1,2,3],[4,5,6],[7,8,9]],[0,2],[1,2]))
+
+print(column_means([[1,2],[3,4],[5,6]]))
+
+print(column_range([[1,2],[5,7]],1))
