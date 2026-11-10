@@ -32,11 +32,13 @@ def column_range(matrix,column):
     col = arr[:, column]
     return round(float(col.max() - col.min()), 6)
 
-if __main__="__main__":
-print(reshape_rows([12,14.5,11,13,15.5,10.5],3))
 
-print(block([[1,2,3],[4,5,6],[7,8,9]],[0,2],[1,2]))
+test_matrix=[[1,2,3],[4,5,6],[7,8,9]]
+test_values=[10,20,30,40,50,60]
+if __name__=="__main__":
+    print('reshape_rows:',reshape_rows(test_values,3))
+    print('block:',block(test_matrix,[0,2],[1]))
+    print('column_means:',column_means(test_matrix))
+    print('column_range:',column_range(test_matrix,2))
+    
 
-print(column_means([[1,2],[3,4],[5,6]]))
-
-print(column_range([[1,2],[5,7]],1))
