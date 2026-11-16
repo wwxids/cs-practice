@@ -23,3 +23,10 @@ print("zeros:", zeros, "dtype:", zeros.dtype)
 print("unknown_table:\n", unknown_table)
 print("identity:\n", identity)
 
+#2
+
+print("Третий элемент:", hours[2])
+print("Последний элемент:", hours[-1])
+print("Элементы с индексами 2–5:", hours[2:6])
+print("Каждый второй элемент:", hours[::2])
+print("В обратном порядке:", hours[::-1])
