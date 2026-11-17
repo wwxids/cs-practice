@@ -1,7 +1,7 @@
 import numpy as np
 
 #1
-
+print("Задание 1")
 hours = np.arange(0, 22, 3)
 
 
@@ -24,7 +24,7 @@ print("unknown_table:\n", unknown_table)
 print("identity:\n", identity)
 
 #2
-
+print("Задание 2")
 
 print("Третий элемент:", hours[2])
 print("Последний элемент:", hours[-1])
@@ -33,9 +33,7 @@ print("Каждый второй элемент:", hours[::2])
 print("В обратном порядке:", hours[::-1])
 
 #3
-print("\n" + "=" * 50)
 print("Задание 3. Строки и столбцы таблицы")
-print("=" * 50)
 
 temperatures = np.array([
     [12, 14, 13, 15],
@@ -52,6 +50,8 @@ print("Последний столбец:", temperatures[:, -1])
 print("Первые две строки без первого столбца:\n", temperatures[:2, 1:])
 
 #4
+
+print("Задание 4")
 
 matrix = np.arange(1, 26).reshape(5, 5)
 print("Исходная matrix:\n", matrix)
@@ -72,6 +72,7 @@ corner = matrix[-2:, -2:]
 print("\nУгловой блок 2×2 (правый нижний):\n", corner, "\nshape:", corner.shape)
 
 #5
+print("Задание 5")
 vector = np.array([10, 20, 30, 40, 50])
 vector[1:4] = 0
 print("vector после замены:", vector)
@@ -97,6 +98,7 @@ print("\nchanged_matrix:\n", changed_matrix)
 print("исходная matrix:\n", matrix)
 
 #6
+print("Задание 6")
 numbers = np.arange(12)
 table = numbers.reshape(3, 4)
 transposed = table.T
