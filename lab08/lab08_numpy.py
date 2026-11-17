@@ -84,16 +84,16 @@ print("small_matrix после замены:\n", small_matrix)
 
 
 changed_hours = hours.copy()
-changed_hours[2:5] = 99          # индексы 2–4
-changed_hours[0::2] = -1         # каждый второй, начиная с первого (индексы 0, 2, 4, 6)
+changed_hours[2:5] = 99          
+changed_hours[0::2] = -1         
 print("\nchanged_hours:", changed_hours)
 print("исходный hours:", hours)
 
 
 changed_matrix = matrix.copy()
-changed_matrix[1, :] = 0         # вторая строка → нули
-changed_matrix[:, -1] = -1       # последний столбец → -1
-changed_matrix[1:4, 1:4] = 100   # центральный блок 3×3 → 100
+changed_matrix[1, :] = 0         
+changed_matrix[:, -1] = -1       
+changed_matrix[1:4, 1:4] = 100 
 print("\nchanged_matrix:\n", changed_matrix)
 print("исходная matrix:\n", matrix)
 
